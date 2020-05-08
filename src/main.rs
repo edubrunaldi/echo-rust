@@ -70,7 +70,9 @@ fn main() {
         "\\r" => print!("\r"),
         "\\t" => print!("\t"),
         "\\v" => print!("\u{000B}"),
-        _ => print!("{} ", arg),
+        _ => {
+          print!("{} ", arg)
+        }
       }
     }
   }
